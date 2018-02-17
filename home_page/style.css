@@ -1,0 +1,127 @@
+html, body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Assistant', "Times New Roman", sans-serif;
+    font-size: 16px;
+    color: #fff;
+}
+p {
+    font-size: 1.56rem;
+    margin:0;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+}
+body > header {
+	background-color: #1a1a1a;
+}
+body > header > .logo_top {
+	display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1370px;
+    margin: auto;
+    height: 85px;
+}
+body > header > .logo_top > a {
+	background-color: #9e1c1e;
+    font-size: 20px;
+    letter-spacing: 1.57px;
+    border-radius: 35px;
+    padding: 10px 30px;
+}
+body > header > nav {
+	background-color: #9e1c1e;
+    border-top: solid 4px #571010;
+}
+body > header > nav > .links {
+    max-width: 1350px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+body > header > nav > .links > a {
+    font-size: 23px;
+    width: 100%;
+    text-align: center;
+    border-right: solid 2px #89181a;
+}
+body > header > nav > .links > a:first-of-type {
+	border: none;
+}
+main {
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem 0;
+    background: linear-gradient(to bottom, rgba(20,20,20,1) 0%, rgba(19,19,19,1) 50%, rgba(18,18,18,1) 70%, rgba(17,17,17,1) 100%) no-repeat bottom,
+    rgba(0, 0, 0, 0.9) url(img/bg-bubbles.png) no-repeat;
+    background-size: 100% 20%, 100%;
+    position: relative;
+    overflow: hidden;
+}
+main::after {
+    content: "";
+    display: block;
+    width: 100%;
+    background: #262626;
+    height: 55px;
+    position: absolute;
+    bottom: -35px;
+    left: 0;
+    transform: rotate(179deg);
+}
+main > .comedy_zoa {
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 2rem
+}
+main > .comedy_zoa > a {
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 27px;
+    background-color: #9e1c1e;
+    border-radius: 35px;
+    width: 100%;
+    text-align: center;
+    padding: 0.6rem 0;
+    margin: 1.25rem 0;
+}
+main > .comedy_zoa > .enter_members {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    border-radius: 35px;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    padding: 1rem 0;
+    position: relative;
+}
+main > .comedy_zoa > .enter_members::after {
+    content: "|";
+    position: absolute;
+    font-size: 1.3rem;
+}
+main > .comedy_zoa > .enter_members > button {
+    font-size: 22px;
+    line-height: 27px;
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+main > .comedy_zoa > .order_phone {
+    font-size: 29px;
+    font-weight: 700;
+    letter-spacing: 7.57px;
+    margin-top: 1.1rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.4);
+    padding-top: 0.2rem;
+}
+main > .comedy_zoa > .order_phone span {
+	font-weight: 400;
+}
+main > img {
+	padding: 0 2rem
+}
