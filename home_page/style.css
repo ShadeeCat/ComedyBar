@@ -6,12 +6,18 @@ html, body {
     color: #fff;
 }
 p {
-    font-size: 1.56rem;
+    font-size: 1.31rem;
     margin:0;
+    line-height: 38.94px;
 }
 a {
     color: inherit;
     text-decoration: none;
+    font-size: 1.43rem;
+    background-color: #9e1c1e;
+    border-radius: 35px;
+
+
 }
 body > header {
 	background-color: #1a1a1a;
@@ -25,10 +31,8 @@ body > header > .logo_top {
     height: 85px;
 }
 body > header > .logo_top > a {
-	background-color: #9e1c1e;
     font-size: 20px;
     letter-spacing: 1.57px;
-    border-radius: 35px;
     padding: 10px 30px;
 }
 body > header > nav {
@@ -42,22 +46,29 @@ body > header > nav > .links {
     justify-content: space-between;
 }
 body > header > nav > .links > a {
-    font-size: 23px;
     width: 100%;
     text-align: center;
     border-right: solid 2px #89181a;
+    height: 2.2rem;
+    border-radius: inherit;
 }
 body > header > nav > .links > a:first-of-type {
 	border: none;
 }
-main {
+.inside_cont {
 	display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
     align-items: center;
+    max-width: 1370px;
+    margin: auto;
+}
+main {
     padding: 5rem 0;
-    background: linear-gradient(to bottom, rgba(20,20,20,1) 0%, rgba(19,19,19,1) 50%, rgba(18,18,18,1) 70%, rgba(17,17,17,1) 100%) no-repeat bottom,
-    rgba(0, 0, 0, 0.9) url(img/bg-bubbles.png) no-repeat;
-    background-size: 100% 20%, 100%;
+    background: linear-gradient(to bottom, rgba(20,20,20,1) 0%, rgba(19,19,19,1) 50%,
+        rgba(18,18,18,1) 70%, rgba(17,17,17,1) 100%) no-repeat bottom,
+        rgba(0, 0, 0, 0.9) url(img/bg-bubbles.png) no-repeat 100% -500%;
+    background-size: 100% 20%, contain;
     position: relative;
     overflow: hidden;
 }
@@ -68,28 +79,24 @@ main::after {
     background: #262626;
     height: 55px;
     position: absolute;
-    bottom: -35px;
+    bottom: -30px;
     left: 0;
-    transform: rotate(179deg);
+    transform: rotate(-1.5deg);
 }
-main > .comedy_zoa {
+main > .inside_cont > .comedy_zoa {
 	display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 0 2rem
 }
-main > .comedy_zoa > a {
-    font-size: 1.5rem;
+main > .inside_cont > .comedy_zoa > a {
     font-weight: 700;
     line-height: 27px;
-    background-color: #9e1c1e;
-    border-radius: 35px;
     width: 100%;
     text-align: center;
     padding: 0.6rem 0;
     margin: 1.25rem 0;
 }
-main > .comedy_zoa > .enter_members {
+main > .inside_cont > .comedy_zoa > .enter_members {
     width: 100%;
     display: flex;
     justify-content: space-around;
@@ -98,12 +105,12 @@ main > .comedy_zoa > .enter_members {
     padding: 1rem 0;
     position: relative;
 }
-main > .comedy_zoa > .enter_members::after {
+main > .inside_cont > .comedy_zoa > .enter_members::after {
     content: "|";
     position: absolute;
     font-size: 1.3rem;
 }
-main > .comedy_zoa > .enter_members > button {
+main > .inside_cont > .comedy_zoa > .enter_members > button {
     font-size: 22px;
     line-height: 27px;
     background: none;
@@ -111,7 +118,7 @@ main > .comedy_zoa > .enter_members > button {
     color: #fff;
     cursor: pointer;
 }
-main > .comedy_zoa > .order_phone {
+main > .inside_cont > .comedy_zoa > .order_phone {
     font-size: 29px;
     font-weight: 700;
     letter-spacing: 7.57px;
@@ -119,9 +126,23 @@ main > .comedy_zoa > .order_phone {
     border-top: 1px solid rgba(255, 255, 255, 0.4);
     padding-top: 0.2rem;
 }
-main > .comedy_zoa > .order_phone span {
+main > .inside_cont > .comedy_zoa > .order_phone > a {
+	background-color: inherit;
+}
+main > .inside_cont > .comedy_zoa > .order_phone span {
 	font-weight: 400;
 }
-main > img {
-	padding: 0 2rem
+section.invite_artists {
+	background: #262626;
+}
+section.invite_artists .artists_cont {
+    display: flex;
+    flex-direction: column;
+    max-width: 650px;
+}
+section.invite_artists .artists_cont > a {
+    padding: 0.6rem 0;
+    width: 12rem;
+    text-align: center;
+    margin-top: 1.5rem;
 }
