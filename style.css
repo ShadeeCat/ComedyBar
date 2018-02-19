@@ -16,8 +16,10 @@ a {
     font-size: 1.43rem;
     background-color: #9e1c1e;
     border-radius: 35px;
-
-
+}
+h3 {
+	font-size: 60px;
+	line-height: 26.99px;
 }
 body > header {
 	background-color: #1a1a1a;
@@ -65,10 +67,16 @@ body > header > nav > .links > a:first-of-type {
 }
 main {
     padding: 5rem 0;
-    background: linear-gradient(to bottom, rgba(20,20,20,1) 0%, rgba(19,19,19,1) 50%,
-        rgba(18,18,18,1) 70%, rgba(17,17,17,1) 100%) no-repeat bottom,
-        rgba(0, 0, 0, 0.9) url(img/bg-bubbles.png) no-repeat 100% -500%;
-    background-size: 100% 20%, contain;
+    background:
+        linear-gradient(
+	    	to bottom,
+	    	rgba(20,20,20,1) 0%,
+	    	rgba(19,19,19,1) 50%,
+	        rgba(18,18,18,1) 70%,
+	        rgba(17,17,17,1) 100%
+	    ) no-repeat bottom,
+	    rgba(0, 0, 0, 0.9) url(img/bg-bubbles.png) no-repeat 100% -110px;
+    background-size: 100% 25%, contain;
     position: relative;
     overflow: hidden;
 }
@@ -79,9 +87,9 @@ main::after {
     background: #262626;
     height: 55px;
     position: absolute;
-    bottom: -30px;
+    bottom: -28px;
     left: 0;
-    transform: rotate(-1.5deg);
+    transform: rotate(-1.6deg);
 }
 main > .inside_cont > .comedy_zoa {
 	display: flex;
@@ -134,15 +142,131 @@ main > .inside_cont > .comedy_zoa > .order_phone span {
 }
 section.invite_artists {
 	background: #262626;
+	padding: 6.5em 0 3.7rem;
 }
 section.invite_artists .artists_cont {
     display: flex;
     flex-direction: column;
     max-width: 650px;
 }
-section.invite_artists .artists_cont > a {
+section > .inside_cont  a.sections_button {
     padding: 0.6rem 0;
     width: 12rem;
     text-align: center;
     margin-top: 1.5rem;
+}
+section.clubs {
+	background: #1a1a1a;
+	padding: 8rem 0;
+	position: relative;
+    overflow: hidden;
+}
+section.clubs::before {
+    content: "";
+    display: block;
+    width: 100%;
+    background: #262626;
+    height: 55px;
+    position: absolute;
+    top: -27px;
+    left: 0;
+    transform: rotate(-1.6deg);
+    box-shadow: 0px 0px 200px 0 rgba(0,0,1,1);
+}
+section.clubs::after {
+    content: "";
+    display: block;
+    width: 100%;
+    background: #292929;
+    height: 55px;
+    position: absolute;
+    bottom: -27px;
+    left: 0;
+    transform: rotate(-1.6deg);
+    box-shadow: 0px 0px 200px 0 rgba(0,0,1,1);
+}
+section.clubs > .inside_cont {
+    flex-direction: column;
+    align-items: start;
+}
+section.clubs > .inside_cont > .image_clubs {
+	display: flex;
+    align-items: baseline;
+    width: 100%;
+    justify-content: space-between;
+}
+
+footer {
+	background-color: #292929;
+	padding: 2rem 0 6rem;
+}
+footer a {
+	background-color: inherit;
+	font-size: 18px;
+	line-height: 1.8rem;
+	position: relative;
+}
+footer > .inside_cont {
+	align-items: baseline;
+}
+footer > .inside_cont > nav {
+	width: 23%;
+    display: flex;
+    flex-direction: column;
+}
+footer > .inside_cont > nav > div {
+	border-bottom: 3px solid rgba(255, 255, 255, 0.1);
+}
+footer > .inside_cont > nav > div:last-of-type {
+	border: none;
+}
+footer > .inside_cont > nav > h4 {
+    font-size: 24px;
+    line-height: 26.99px;
+    border-bottom: 3px solid rgba(255, 255, 255, 0.2);
+    margin: 0.8rem 0;
+    padding: 0.8rem 0;
+}
+footer > .inside_cont > nav > div > a.bord {
+    margin-left: 8px;
+}
+footer > .inside_cont > nav > div > a.bord::after {
+	content: "|";
+    position: absolute;
+    font-size: 1.3rem;
+    left: -8px;
+}
+footer > .inside_cont > nav span {
+	font-size: 1.2rem;
+    font-weight: 700;
+}
+footer > .inside_cont > nav > address {
+	display: flex;
+    flex-direction: column;
+    font-style: normal;
+}
+footer > .inside_cont > nav > .social {
+	display: flex;
+    justify-content: space-around;
+    border: none;
+}
+footer > .inside_cont > nav > .social > a.youtube::before {
+	content: "|";
+    opacity: .2;
+    position: absolute;
+    font-size: 1.3rem;
+    left: -25px;
+    top: 10px;
+}
+footer > .inside_cont > nav > .social > a.youtube::after {
+    content: "|";
+    opacity: .2;
+    position: absolute;
+    font-size: 1.3rem;
+    right: -25px;
+    top: 10px;
+}
+footer > .inside_cont > nav > .social img {
+	width: 55px;
+	height: 55px;
 }
