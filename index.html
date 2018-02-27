@@ -10,7 +10,9 @@
 
     <title>קומדי בר - סטנד אפ, ייצוג אמנים ומופעים</title>
 
+	<link rel="stylesheet" href="../assets/include.css"/>
     <link rel="stylesheet" href="style.css"/>
+
 </head>
 <body>
 	<header>
@@ -22,55 +24,55 @@
   			</div>
   			<a href="#">
   				<span class="mob_links">
-  					<img src="img/nav-mob/booking-tickets.png" alt="">
+  					<img src="../assets/img/nav-mob/booking-tickets.png" alt="">
   					<span>הזמנת כרטיסים</span>
   				</span>
   				<span class="triangle"></span>
   			</a>
   			<a href="#">
   				<span class="mob_links">
-  					<img src="img/nav-mob/club-members.png" alt="">
+  					<img src="../assets/img/nav-mob/club-members.png" alt="">
   					<span>מועדון חברים</span>
   				</span>
   				<span class="triangle"></span>
   			</a>
   			<a href="#">
   			  	<span class="mob_links">
-  					<img src="img/nav-mob/present-artists.png" alt="">
+  					<img src="../assets/img/nav-mob/present-artists.png" alt="">
   					<span class="">ייצוג אמנים</span>
   				</span>
   				<span class="triangle"></span>
   			</a>
   			<a href="#">
   				<span class="mob_links">
-  					<img src="img/nav-mob/about.png" alt="">
+  					<img src="../assets/img/nav-mob/about.png" alt="">
   					<span>אודותינו</span>
   				</span>
   				<span class="triangle"></span>
   			</a>
   			<a href="#">
   				<span class="mob_links">
-  					<img src="img/nav-mob/contact.png" alt="">
+  					<img src="../assets/img/nav-mob/contact.png" alt="">
   					<span>צור קשר</span>
   				</span>
   				<span class="triangle"></span>
   			</a>
   			<a href="#">
   				<span class="mob_links">
-  					<img src="img/nav-mob/regulations.png" alt="">
+  					<img src="../assets/img/nav-mob/regulations.png" alt="">
   					<span>תקנון</span>
   				</span>
   				<span class="triangle"></span>
   			</a>
   			<p>הערוצים שלנו:</p>
   			<div class="social_mob">
-  				<a href="#"><img src="img/social/facebook-mob.png" alt=""></a>
-  				<a href="#"><img src="img/social/youtube-mob.png" alt=""></a>
-  				<a href="#"><img src="img/social/instagram-mob.png" alt=""></a>
+  				<a href="#"><img src="../assets/img/social/facebook-mob.png" alt=""></a>
+  				<a href="#"><img src="../assets/img/social/youtube-mob.png" alt=""></a>
+  				<a href="#"><img src="../assets/img/social/instagram-mob.png" alt=""></a>
   			</div>
 		</nav>
 		<div class="logo_top">
-			<img src="img/logo.png" alt="" style="max-width: 50%;">
+			<img src="../assets/img/logo.png" alt="" style="max-width: 50%;">
 			<a href="tel:03-5607075" class="red circle web"><span>טלפון להזמנות:</span> 03-5607075</a>
 			<div class="side_menu mob">
   				<div class="bar1"></div>
@@ -211,29 +213,14 @@
 			<nav>
 				<h4>הערוצים שלנו</h4>
 				<div class="social">
-					<a href="#"><img src="img/social/facebook.png" alt=""></a>
-					<a href="#" class="youtube"><img src="img/social/youtube.png" alt=""></a>
-					<a href="#"><img src="img/social/instagram.png" alt=""></a>
+					<a href="#"><img src="../assets/img/social/facebook.png" alt=""></a>
+					<a href="#" class="youtube"><img src="../assets/img/social/youtube.png" alt=""></a>
+					<a href="#"><img src="../assets/img/social/instagram.png" alt=""></a>
 				</div>
 			</nav>
 		</div>
 	</footer>
 
-<script>
-	var openMobMenu = document.querySelector('.side_menu');
-	var sidenav = document.querySelector('.sidenav');
-	openMobMenu.addEventListener('click', navSide);
-
-		function navSide() {
-			openMobMenu.classList.toggle("change");
-			if (sidenav.style.width === "75%") {
-				sidenav.style.width = "0";
-			}
-			else {
-				sidenav.style.width = "75%";
-			}
-		}
-</script>
-
+	<script src="../assets/hamburger.js"></script>
 </body>
 </html>
