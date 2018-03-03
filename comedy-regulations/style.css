@@ -1,0 +1,45 @@
+main {
+    background: #262626;
+}
+main > .inside_cont > h6:last-of-type {
+    font-weight: 600;
+}
+main > .inside_cont {
+    flex-direction: column;
+    align-items: flex-start;
+}
+@media only screen and (max-width: 980px) {
+    .web {
+        display: none;
+    }
+    a.mob {
+        display: block;
+        text-align: center;
+    }
+    header > .logo_top {
+        justify-content: center;
+    }
+    .web> nav {}
+    main {
+        padding: 2rem 0 2rem;
+    }
+    footer {
+        padding: 0;
+    }
+    footer::before {
+        content: none;
+    }
+}
+@media only screen and (max-width: 600px) {
+    html, body {
+        font-size: 14px;
+    }
+}
+@media only screen and (max-width: 450px) {
+    html, body {
+        font-size: 12px;
+    }
+    h2 {
+        font-size: 3.3rem;
+    }
+}

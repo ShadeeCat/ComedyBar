@@ -1,0 +1,120 @@
+h3 {
+    font-size: 1.93rem;
+    max-width: 450px;
+}
+main > .inside_cont {
+	flex-direction: column;
+    align-items: flex-start;
+}
+form {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+	max-width: 670px;
+}
+form > input,
+form > textarea {
+    width: 100%;
+    color: black;
+    height: 3.43rem;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    border-radius: 5px;
+    border: none;
+   	padding-right: 1rem;
+	font-family: Assistant;
+}
+form > input::placeholder,
+form > textarea::placeholder {
+	color: #4c4c4c;
+}
+form > input[name="firstname"],
+form > input[name="lastname"] {
+	width: 46.5%;
+}
+form > textarea {
+	padding-top: 0.5rem;
+	height: auto;
+}
+form > button {
+	width: 100%;
+    font-family: Assistant;
+    font-size: 1.625rem;
+    font-weight: 700;
+    height: 3.43rem;
+    margin-top: 1rem;
+    background: #9e1c1e;
+    border: none;
+    border-radius: 35px;
+    color: #fff;
+}
+section.main {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap-reverse;
+}
+.contact {
+	text-align: center;
+}
+.contact > .image_cont {
+    display: flex;
+    max-width: 350px;
+    margin: 25px auto;
+    font-size: 1.7rem;
+    align-items: center;
+    font-style: normal;
+}
+.contact i {
+    background: url(../assets/img/spritesheet.png) no-repeat;
+    width: 25px;
+    height: 25px;
+    margin-left: 1rem;
+}
+i.sprite_location {
+	background-position: -205px -87px;
+}
+i.sprite_phone {
+	background-position: -233px -87px;
+}
+i.sprite_fax {
+	background-position: -87px -99px;
+}
+i.sprite_email {
+	background-position: -139px -5px;
+}
+@media only screen and (max-width: 1300px) {
+    section.main {
+        justify-content: center;
+    }
+    main > .inside_cont {
+        align-items: center;
+    }
+}
+@media only screen and (max-width: 980px) {
+    h2 {
+        display: none;
+    }
+    h3 {
+        text-align: start;
+        padding-top: 1.9rem;
+    }
+    section.main {
+        justify-content: flex-start;
+    }
+    .contact {
+        width: 100%;
+        border-bottom: 1px solid #fff;
+    }
+    .contact > .image_cont {
+        margin: 15px 0;
+    }
+    .contact > img {
+        display: none;
+    }
+    form > input[name="firstname"],
+    form > input[name="lastname"] {
+        width: 100%;
+}
+
+}

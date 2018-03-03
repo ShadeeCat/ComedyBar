@@ -1,0 +1,41 @@
+main >.inside_cont {
+	flex-direction: column;
+	align-items: flex-start;
+}
+main > .inside_cont > h4 {
+	font-size: 1.625rem;
+}
+main > .inside_cont > h4 > span {
+	font-weight: 600;
+}
+
+main > .inside_cont > .artists_list {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+}
+main > .inside_cont > .artists_list > figure {
+    display: flex;
+    width: 255px;
+    height: auto;
+    margin-right: 0;
+    margin: 1rem 0 1rem 1.187rem;
+}
+main > .inside_cont > .artists_list > figure img {
+    display: block;
+    max-width: 100%;
+    height: 85%;
+    width: 300px;
+}
+main > .inside_cont > .artists_list > figure figcaption {
+    text-align: center;
+    background: #9e1c1e;
+    padding: 0.5rem;
+    font-size: 1.375rem;
+    font-weight: 700;
+}
+@media only screen and (max-width: 980px) {
+	main > .inside_cont > .artists_list > figure {
+		width: 45%;
+	}
+}
