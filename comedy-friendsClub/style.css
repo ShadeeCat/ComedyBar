@@ -1,0 +1,94 @@
+.form h6 {
+    font-weight: 600;
+    padding: 0;
+}
+form {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+	max-width: 670px;
+}
+form input,
+form textarea {
+    width: 100%;
+    color: black;
+    height: 3.43rem;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    border-radius: 5px;
+    border: none;
+   	padding-right: 1rem;
+	font-family: Assistant;
+}
+form input::placeholder {
+	color: #4c4c4c;
+}
+form input[name="firstname"],
+form input[name="lastname"] {
+	width: 46.5%;
+}
+form input[type="submit"] {
+    font-size: 1.625rem;
+    font-weight: 700;
+    background: #9e1c1e;
+    border-radius: 35px;
+    color: #fff;
+}
+.check {
+    font-size: 1.3rem;
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+}
+.check > input[type="checkbox"] {
+    width: 2rem;
+    height: 2rem;
+    margin-left: 1rem;
+}
+.collage {
+    display: grid;
+    grid-gap: 3px;
+    align-items: center;
+    grid-template-columns: 250px 420px;
+}
+.first {
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+.fifth {
+    padding-right: 85px;
+}
+.mob_collage {
+    display: none;
+}
+@media only screen and (max-width: 1350px) {
+    .inside_cont {
+        justify-content: center;
+    }
+}
+@media only screen and (max-width: 980px) {
+    h2 {
+        display: none;
+    }
+    form > input[name="firstname"],
+    form > input[name="lastname"] {
+        width: 100%;
+    }
+    .collage {
+        padding-top: 1rem;
+        margin-top: 1rem;
+        border-top: 2px solid #777777;
+    }
+}
+@media only screen and (max-width: 660px) {
+    .pic {
+        display: none;
+    }
+    .collage {
+        display: block;
+    }
+    .mob_collage {
+        display: block;
+        max-width: 100%;
+    }
+}
