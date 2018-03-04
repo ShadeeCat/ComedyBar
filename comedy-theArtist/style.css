@@ -1,0 +1,140 @@
+h3 {
+	font-size: 1.875rem;
+}
+section.main {
+	display: grid;
+	grid-template-columns: auto auto;
+  	grid-gap: 10px;
+  	direction: ltr;
+  	padding-bottom: 3rem;
+}
+section.main > .artist_cont {
+	direction: rtl;
+	padding-bottom: 1.35rem;
+}
+section.main > .artist_cont p {
+	line-height: 2rem;
+}
+section.main > .img {
+    grid-row-start: 1;
+    grid-row-end: 3;
+	display: flex;
+	flex-direction: column;
+}
+section.main > .img > a {
+	padding: 0.7rem;
+	text-align: center;
+	font-weight: bold;
+	margin-top: 1rem;
+}
+.form {
+	direction: rtl;
+    border-top: 1px solid #515151;
+    padding-top: 1.35rem;
+}
+.form .grey {
+	color: #b3b3b3;
+}
+.form > .headline {
+	display: flex;
+    align-items: center;
+    font-weight: 700;
+}
+.form > .headline > a {
+	font-size: 1.625rem;
+}
+.form > span {
+	font-size: 1.33rem;
+}
+form {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+	max-width: 670px;
+}
+form > input,
+form > textarea {
+    width: 100%;
+    color: black;
+    height: 3.43rem;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    border-radius: 5px;
+    border: none;
+   	padding-right: 1rem;
+	font-family: Assistant;
+}
+form > input::placeholder,
+form > textarea::placeholder {
+	color: #4c4c4c;
+}
+form > input[name="companyname"],
+form > input[name="phone_number"] {
+	width: 46.5%;
+}
+form > textarea {
+	padding-top: 0.5rem;
+	height: auto;
+}
+form > input[type="submit"] {
+    font-size: 1.625rem;
+    font-weight: 700;
+    height: 3.43rem;
+    margin-top: 1rem;
+    background: #9e1c1e;
+    color: #fff;
+}
+.movie_cont {
+	padding-top: 2rem;
+	border-top: 1px solid #515151;
+	padding-bottom: 5rem;
+}
+.movies {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 0.5rem 1rem;
+    padding-top: 1rem
+}
+.movies > iframe:first-of-type {
+	grid-row-start: 1;
+    grid-row-end: 3;
+}
+@media only screen and (max-width: 1300px) {
+	.form {
+		grid-column-start: 1;
+    	grid-column-end: 3;
+	}
+}
+@media only screen and (max-width: 980px) {
+	h2 {
+		font-size: 2.2rem;
+	}
+	main {
+		padding-bottom: 0;
+	}
+	section.main {
+		padding: 2rem 0;
+	}
+	form > input[name="companyname"],
+	form > input[name="phone_number"] {
+		width: 100%;
+	}
+	.movie_cont {
+		padding-top: 1rem;
+	}
+	.movies {
+		display: flex;
+		flex-direction: column;
+	}
+	.movies > iframe:first-of-type {
+		display: none;
+	}
+	.movies > iframe {
+		width: 650px;
+		margin-top: 1rem;
+	}
+	.movie_cont {
+		padding-bottom: 1rem;
+	}
+
+}

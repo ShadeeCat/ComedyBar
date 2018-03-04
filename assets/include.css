@@ -10,11 +10,11 @@ a {
     color: inherit;
     text-decoration: none;
 }
-a.red {
+.red {
     font-size: 1.43rem;
     background-color: #9e1c1e;
 }
-a.circle {
+.circle {
     border-radius: 35px;
 }
 .triangle {

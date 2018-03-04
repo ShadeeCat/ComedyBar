@@ -8,7 +8,7 @@ form.addEventListener('submit', function (e) {
 		if (response.ok) {
 			window.location.href = '../congrats/';
 		} else  {
-			window.location.href = '../go_fuck_yourself/';
+			window.location.href = '../mistake/';
 		}
 	})
 })

@@ -36,7 +36,7 @@ form > textarea {
 	padding-top: 0.5rem;
 	height: auto;
 }
-form > button {
+form > input[name="submit"] {
 	width: 100%;
     font-family: Assistant;
     font-size: 1.625rem;
