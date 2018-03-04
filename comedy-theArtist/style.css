@@ -10,7 +10,6 @@ section.main {
 }
 section.main > .artist_cont {
 	direction: rtl;
-	padding-bottom: 1.35rem;
 }
 section.main > .artist_cont p {
 	line-height: 2rem;
@@ -26,6 +25,7 @@ section.main > .img > a {
 	text-align: center;
 	font-weight: bold;
 	margin-top: 1rem;
+	background-color: #87181a;
 }
 .form {
 	direction: rtl;
