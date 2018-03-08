@@ -49,6 +49,9 @@ p {
     margin:0;
     font-size: 1.125rem /*18px*/;
 }
+label {
+    display: none;
+}
 .mob, .artists_cont .mob {
     display: none;
 }
@@ -109,37 +112,37 @@ nav.sidenav > a > .mob_links {
     display: flex;
     align-items: center;
 }
-nav.sidenav > a > .mob_links > i,
+nav.sidenav > a > .mob_links > em,
 nav.sidenav > .social_mob > a,
 footer > .inside_cont > nav > .social > a {
     background: url(../assets/img/spritesheet.png) no-repeat;
 }
-nav.sidenav > a > .mob_links > i.sprite_booking_tickets {
+nav.sidenav > a > .mob_links > em.sprite_booking_tickets {
     width: 24px;
     height: 25px;
     background-position: -42px -5px;
 }
-nav.sidenav > a > .mob_links > i.sprite_club_members {
+nav.sidenav > a > .mob_links > em.sprite_club_members {
     width: 21px;
     height: 21px;
     background-position: -76px -5px;
 }
-nav.sidenav > a > .mob_links > i.sprite_present_artists {
+nav.sidenav > a > .mob_links > em.sprite_present_artists {
     width: 21px;
     height: 26px;
     background-position: -233px -119px;
 }
-nav.sidenav > a > .mob_links > i.sprite_about {
+nav.sidenav > a > .mob_links > em.sprite_about {
     width: 27px;
     height: 18px;
     background-position: -5px -5px;
 }
-nav.sidenav > a > .mob_links > i.sprite_contact {
+nav.sidenav > a > .mob_links > em.sprite_contact {
     width: 22px;
     height: 22px;
     background-position: -107px -5px;
 }
-nav.sidenav > a > .mob_links > i.sprite_regulations {
+nav.sidenav > a > .mob_links > em.sprite_regulations {
     width: 18px;
     height: 22px;
     background-position: -266px -87px;

@@ -36,16 +36,9 @@ form > textarea {
 	padding-top: 0.5rem;
 	height: auto;
 }
-form > input[name="submit"] {
-	width: 100%;
-    font-family: Assistant;
+form input[type="submit"] {
     font-size: 1.625rem;
     font-weight: 700;
-    height: 3.43rem;
-    margin-top: 1rem;
-    background: #9e1c1e;
-    border: none;
-    border-radius: 35px;
     color: #fff;
 }
 section.main {
@@ -65,22 +58,22 @@ section.main {
     align-items: center;
     font-style: normal;
 }
-.contact i {
+.contact em {
     background: url(../assets/img/spritesheet.png) no-repeat;
     width: 25px;
     height: 25px;
     margin-left: 1rem;
 }
-i.sprite_location {
+em.sprite_location {
 	background-position: -205px -87px;
 }
-i.sprite_phone {
+em.sprite_phone {
 	background-position: -233px -87px;
 }
-i.sprite_fax {
+em.sprite_fax {
 	background-position: -87px -99px;
 }
-i.sprite_email {
+em.sprite_email {
 	background-position: -139px -5px;
 }
 @media only screen and (max-width: 1300px) {
@@ -115,6 +108,5 @@ i.sprite_email {
     form > input[name="firstname"],
     form > input[name="lastname"] {
         width: 100%;
-}
-
+    }
 }
