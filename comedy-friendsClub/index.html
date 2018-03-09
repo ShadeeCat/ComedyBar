@@ -93,21 +93,28 @@
   <main>
     <div class="inside_cont">
       <div class="form">
-        <h2>מועדון חברים</h2>
+        <h3>מועדון חברים</h3>
         <p>הצטרפו למועדון חברי הקומדי בר ותזכו להנחות ומבצעים לכל המופעים במשרד.</p>
         <h6>הרשמה בחינם למועדון החברים</h6>
-        <form action="" id="friends_form">
-          <input type="text" name="firstname" placeholder="שם פרטי">
-          <input type="text" name="lastname" placeholder="שם משפחה">
-          <input type="email" name="email" placeholder="מייל">
+        <form action="URL" id="friends_form">
+          <label for="firstname">Firstname</label>
+          <input type="text" name="firstname" placeholder="שם פרטי" id="firstname">
+          <label for="lastname">Lastname</label>
+          <input type="text" name="lastname" placeholder="שם משפחה" id="lastname">
+          <label for="email">Email</label>
+          <input type="email" name="email" placeholder="מייל" id="email">
+          <label for="address">Address</label>
           <input type="text" name="address" placeholder="כתובת">
-          <input type="tel" name="phone_number" placeholder="טלפון נייד">
+          <label for="phone_number">Phone number</label>
+          <input type="tel" name="phone_number" placeholder="טלפון נייד" id="phone_number">
           <div class="bdate">
             <span>תאריך לידה</span>
-            <input type="date" name="birthdate" placeholder="תאריך לידה">
+            <label for="date">Date</label>
+            <input type="date" name="birthdate" id="date">
           </div>
           <div class="check">
-            <input type="checkbox" name="advertising">
+            <label for="checkbox">checkbox</label>
+            <input type="checkbox" name="advertising" id="checkbox">
             <span>ההרשמה למועדון החברים מהווה הסכמה לקבלת דברי פרסום בטלפון, דואר ובמייל</span>
           </div>
           <input type="submit" value="סיימתי">
