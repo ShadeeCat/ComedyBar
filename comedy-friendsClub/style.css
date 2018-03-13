@@ -37,32 +37,85 @@ form input[type="submit"] {
     border-radius: 35px;
     color: #fff;
 }
+.bdate {
+    display: flex;
+    width: 100%;
+    background-color: #fff;
+    height: 3.43rem;
+    margin-top: 1rem;
+    border-radius: 5px;
+    color: #4c4c4c;
+}
+.bdate > span {
+    background-color: #d6d6d6;
+    width: 18%;
+    font-size: 1.5rem;
+    border: none;
+    padding-right: 1rem;
+    height: 2.75rem;
+    padding-top: 0.687rem;
+    border-radius: 0 5px 5px 0;
+}
+.bdate > select {
+    color: #4c4c4c;
+    width: 37%;
+    font-size: 1.5rem;
+    border: none;
+    padding-right: 6rem;
+    font-family: Assistant;
+    margin-left: 1rem;
+}
+.bdate > select[name="month"] {
+    margin-left: 1rem;
+}
+.bdate > select[name="day"] {
+    border-right: 1px solid;
+}
 .check {
     font-size: 1.3rem;
     margin-top: 1rem;
     display: flex;
-    align-items: center;
+    align-items: end;
 }
 .check > input[type="checkbox"] {
     width: 2rem;
     height: 2rem;
     margin-left: 1rem;
+    margin-top: 0;
 }
 .collage {
     display: grid;
     grid-gap: 3px;
-    align-items: center;
-    grid-template-columns: 250px 420px;
+    align-items: flex-end;
+    justify-items: center;
+    padding-top: 1rem;
+}
+.pic {
+    max-width: 100%;
 }
 .first {
+    grid-column-start: 1;
+    grid-column-end: 3;
     grid-row-start: 1;
     grid-row-end: 3;
+    height: 100%;
+}
+.second {
+    grid-column-start: 3;
+    grid-column-end: 7;
+}
+.third {
+    grid-column-start: 3;
+    grid-column-end: 7;
+}
+.fourth {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    height: 100%;
 }
 .fifth {
-    padding-right: 85px;
-}
-.mob_collage {
-    display: none;
+    grid-column-start: 4;
+    grid-column-end: 7;
 }
 @media only screen and (max-width: 1350px) {
     .inside_cont {
@@ -73,25 +126,49 @@ form input[type="submit"] {
     h3 {
         display: none;
     }
+    main {
+        padding: 5rem 0 1rem;
+    }
+    .form {
+        padding-top: 2rem;
+    }
     form input[name="firstname"],
     form input[name="lastname"] {
         width: 100%;
     }
     .collage {
-        padding-top: 1rem;
-        margin-top: 1rem;
+        padding-top: 0.6rem;
         border-top: 2px solid #777777;
+        margin-top: 0.9rem;
     }
 }
 @media only screen and (max-width: 660px) {
-    .pic {
-        display: none;
+.first {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row: 2;
     }
-    .collage {
-        display: block;
+.second {
+    grid-column-start: 3;
+    grid-column-end: 8;
+    grid-row: 2;
     }
-    .mob_collage {
-        display: block;
-        max-width: 100%;
+.third {
+    grid-column-start: 4;
+    grid-column-end: 9;
+    grid-row: 1;
+    }
+.fourth {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row: 1;
+    }
+.fifth {
+    grid-column-start: 6;
+    grid-column-end: 9;
+    grid-row: 2;
+    }
+.bdate > span {
+    width: 8rem;
     }
 }

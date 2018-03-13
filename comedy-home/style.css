@@ -1,6 +1,12 @@
 h3 {
     font-size: 3.75rem;
 }
+.hidden {
+    display: none;
+}
+.shown {
+    display: block;
+}
 main {
     background:
         linear-gradient(
@@ -60,6 +66,35 @@ main > .inside_cont > .comedy_zoa > .enter_members > button {
     border: none;
     color: #fff;
     cursor: pointer;
+}
+main > .inside_cont > .comedy_zoa > .friends {
+    width: 100%;
+}
+main > .inside_cont > .comedy_zoa > .friends > form {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+main > .inside_cont > .comedy_zoa > .friends > form > input[type="email"] {
+    width: 65%;
+    color: black;
+    height: 40px;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    border-radius: 5px;
+    border: none;
+    padding-right: 1rem;
+    font-family: Assistant;
+}
+main > .inside_cont > .comedy_zoa > .friends > form > input[type="submit"] {
+    font-size: 1.5rem;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    padding: 0.5rem 44px;
+}
+main > .inside_cont > .comedy_zoa > .friends > form > button {
+
 }
 main > .inside_cont > .comedy_zoa > .order_phone {
     font-size: 1.81rem;
