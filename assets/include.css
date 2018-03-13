@@ -1,4 +1,4 @@
-html, body {
+body {
     padding: 0;
     margin: 0;
     /*font-family: 'Assistant', "Times New Roman", sans-serif;*/
@@ -355,7 +355,7 @@ footer > .inside_cont > nav > .social > a.sprite_instagram {
 }
 @media only screen and (max-width: 980px) {
     .web {
-        display: none;
+        display: none !important;
     }
     a.mob {
         display: block;

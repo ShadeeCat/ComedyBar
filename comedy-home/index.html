@@ -97,11 +97,30 @@
 					<button id="friends">כניסת חברים</button>
 					<button id="companies">כניסת וועדים</button>
 				</div>
-        <div class="friends hidden">
+        <div class="friends web hidden">
           <form action="URL">
-            <input type="email" placeholder="דוא&quot;ל">
-            <input type="submit" value="כניסה" class="red circle"></input>
+            <label for="email">email</label>
+            <input type="email" placeholder="דוא&quot;ל" id="email">
+            <input type="submit" value="כניסה" class="red">
           </form>
+          <div class="back_register">
+            <a href="#">הרשמה</a>
+            <button class="back1">חזרה</button>
+          </div>
+        </div>
+        <div class="companies web hidden">
+          <form action="URL" id="company_form">
+            <div class="inputs">
+              <label for="company1">company1</label>
+              <input type="text" placeholder="שם החברה" id="company1">
+              <label for="company2">company2</label>
+              <input type="text" placeholder="שם החברה" id="company2">
+            </div>
+          </form>
+            <div class="back_register">
+              <input type="submit" value="כניסה" class="red" form="company_form">
+              <button class="back2">חזרה</button>
+            </div>
         </div>
 				<div class="order_phone">
 					<a href="tel:03-5607075"><span>טלפון להזמנות:</span> 03-5607075</a>
@@ -129,7 +148,7 @@
 				</div>
 				<a href="#" class="red circle sections_link">לכל האמנים</a>
 			</div>
-			<iframe src="https://www.youtube.com/embed/5rGhWGhqf_s" frameborder="0" encrypted-media" allowfullscreen width="650px" height="400px" title="video"></iframe>
+			<iframe src="https://www.youtube.com/embed/5rGhWGhqf_s" allowfullscreen title="video"></iframe>
 		</div>
 	</section>
 	<section class="clubs">
