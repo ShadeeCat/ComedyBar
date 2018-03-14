@@ -243,9 +243,6 @@ section.clubs > .inside_cont > .image_clubs > img {
         width: 26%;
         max-width: 30%;
     }
-    main > .inside_cont > .comedy_zoa > .enter_members {
-        display: none;
-    }
 }
 @media only screen and (max-width: 450px) {
     main > .inside_cont > .comedy_zoa > a {
