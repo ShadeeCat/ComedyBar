@@ -55,7 +55,6 @@ main h3 {
 	}
 	main {
 		background: linear-gradient(to bottom, #262626 75%, #1d1d1d 25%);
-		padding: 5rem 0 3rem;
 	}
 	main > .inside_cont {
 		justify-content: center;

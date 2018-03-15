@@ -354,6 +354,9 @@ footer > .inside_cont > nav > .social > a.sprite_instagram {
     background-position: -122px -99px;
 }
 @media only screen and (max-width: 980px) {
+    main {
+        padding: 6rem 0 1rem;
+    }
     .web {
         display: none !important;
     }

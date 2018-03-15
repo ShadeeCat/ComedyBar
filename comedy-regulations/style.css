@@ -20,9 +20,6 @@ main > .inside_cont {
         justify-content: center;
     }
     .web> nav {}
-    main {
-        padding: 2rem 0 2rem;
-    }
     footer {
         padding: 0;
     }
