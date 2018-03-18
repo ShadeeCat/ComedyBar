@@ -83,40 +83,6 @@ form input[type="submit"] {
     margin-left: 1rem;
     margin-top: 0;
 }
-.collage {
-    display: grid;
-    grid-gap: 3px;
-    align-items: flex-end;
-    justify-items: center;
-    padding-top: 1rem;
-}
-.pic {
-    max-width: 100%;
-}
-.first {
-    grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row-start: 1;
-    grid-row-end: 3;
-    height: 100%;
-}
-.second {
-    grid-column-start: 3;
-    grid-column-end: 7;
-}
-.third {
-    grid-column-start: 3;
-    grid-column-end: 7;
-}
-.fourth {
-    grid-column-start: 1;
-    grid-column-end: 4;
-    height: 100%;
-}
-.fifth {
-    grid-column-start: 4;
-    grid-column-end: 7;
-}
 @media only screen and (max-width: 1400px) {
     .inside_cont {
         justify-content: center;
@@ -144,6 +110,7 @@ form input[type="submit"] {
     grid-column-start: 1;
     grid-column-end: 3;
     grid-row: 2;
+    width: auto;
     }
 .second {
     grid-column-start: 3;

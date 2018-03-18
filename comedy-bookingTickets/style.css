@@ -1,0 +1,218 @@
+h2 {
+	font-size: 3.125rem;
+    padding-bottom: 2.5rem;
+}
+h3 {
+	font-size: 1.625rem;
+}
+h6 {
+	padding: 2rem 0 3rem;
+}
+.header {
+    display: grid;
+    justify-content: space-between;
+    width: 100%;
+    padding-bottom: 2rem;
+}
+.header > .text {
+	grid-column: 1;
+}
+.header > .pics {
+	grid-column: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+.mob_pic {
+	display: none;
+}
+.header > .pics > .links {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 0 0 2.5rem;
+}
+.header > .pics > .links > a {
+    display: flex;
+    background: #3b5a9b;
+    padding: 0.4rem 1rem 0.4rem 1.5rem;
+    align-items: center;
+    font-weight: 600;
+    border-bottom: 4px solid #293e6b;
+}
+.header > .pics > .links > a > img {
+	width: 2rem;
+}
+.header > .pics > .links > .video_pics {
+	display: flex;
+    width: 50%;
+    justify-content: space-between;
+}
+.header > .pics > .links > .video_pics > a {
+	display: flex;
+    align-items: center;
+    position: relative;
+}
+.header > .pics > .links > .video_pics > a.video_youtube:before {
+	content: "|";
+    font-size: 3rem;
+    position: absolute;
+    right: -90%;
+    opacity: 0.4;
+    top: -50%;
+    cursor: auto;
+}
+.header > .pics > .links > .video_pics > a.video_youtube:after {
+	content: "|";
+    font-size: 3rem;
+    position: absolute;
+    right: 150%;
+    opacity: 0.4;
+    top: -50%;
+    cursor: auto;
+}
+.header > .pics > .links > .video_pics > a.video_youtube > .text {
+	padding-right: 10px;
+}
+.header > .pics > .links > .video_pics > a.camera_pic > .text {
+	padding-right: 5px;
+}
+.header > .pics > .links > .video_pics .camera img {
+	width: 25px;
+}
+.header > .pics > .links > .video_pics .camera span.camera_pic {
+	position: relative;
+}
+.header > .pics > .links > .video_pics .camera span.camera_pic:before {
+    content: "";
+    border: 2px solid #fff;
+    border-radius: 30px;
+    position: absolute;
+    padding: 22.4px;
+    top: -11px;
+    right: -12px;
+}
+.header > .pics > .links > .video_pics p {
+    padding-right: 16px;
+    font-weight: 600;
+    line-height: 1.1rem;
+}
+
+.logo_youtube {
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 15px solid #fff;
+    position: relative;
+}
+.logo_youtube:before {
+    content: "";
+    border: 2px solid #fff;
+    position: absolute;
+    padding: 22.4px;
+    border-radius: 30px;
+    top: -24px;
+    right: -15px;
+}
+.header .description p {
+	font-size: 1.25rem;
+    line-height: 2rem;
+    font-weight: 300;
+}
+.list {
+	width: 100%;
+	font-size: 1.5rem;
+	padding-top: 1rem;
+    border-top: 2px solid rgba(255, 255, 255, .2);
+}
+.list > ul {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    padding-right: 2rem;
+}
+.list > ul.titles {
+	margin-bottom: 0;
+	background: #9e1c1e;
+    border-bottom: 3px solid #571010;
+    padding-right: 2rem;
+    font-weight: 700;
+}
+.list > ul.event {
+    background: #1f1f1f;
+    margin: 2px 0 0 0;
+    padding: 0.6rem 2rem 0.6rem 0;
+}
+.list > ul > .date {
+	width: 20%;
+}
+.list > ul > .address {
+	width: 45%;
+    list-style: none;
+    padding: 0;
+}
+.list > ul .time {
+	width: 20%;
+}
+.list > ul > .book {
+	width: 8rem;
+    text-align: center;
+    font-weight: 700;
+}
+
+@media only screen and (max-width: 1300px) {
+	h3 {
+		grid-column-start: 1;
+    	grid-column-end: 3;
+	}
+}
+@media only screen and (max-width: 980px) {
+	h2 {
+		display: none;
+	}
+	h3 {
+		font-size: 1.4rem;
+	}
+	.header > .pics > .links {
+		align-items: flex-start;
+	}
+	.header > .pics > .links > .video_pics {
+		flex-direction: column;
+		width: 20%;
+	}
+	.header > .pics > .links > .video_pics > a.camera {
+		padding-top: 30px;
+	}
+	.header > .pics > .links > .video_pics > a.video_youtube:before {
+		content: none;
+	}
+	.header > .pics > .links > .video_pics > a.video_youtube:after {
+		content: none;
+	}
+	.list > ul.titles {
+		padding-right: 0.6rem;
+	}
+	.list > ul.event {
+		padding: 0.6rem;
+	}
+	.list > ul > .date {
+		width: 23%;
+	}
+	.list > ul > .address {
+		width: 39%;
+	}
+	.list > ul .time {
+		width: 15%;
+	}
+}
+@media only screen and (max-width: 600px) {
+	.mob_pic {
+		display: block;
+		width: 100%;
+	}
+	.web_pic {
+		display: none;
+	}
+	.header > .pics > .links {
+		align-items: flex-start;
+    	padding: 2.5rem 0 0 3.5rem;
+	}
+}

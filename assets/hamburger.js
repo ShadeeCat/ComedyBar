@@ -11,3 +11,12 @@
 				sidenav.style.width = "75%";
 			}
 		}
+
+
+    //     var anchor = document.querySelectorAll('.links a');
+    //     current = window.location.pathname.split('/')[2];
+    //     for (var i = 0; i < anchor.length; i++) {
+    //     if(anchor[i].dataset.url == current) {
+    //         anchor[i].classList.add("active");
+    //     }
+    // };
