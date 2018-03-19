@@ -1,0 +1,118 @@
+h3 {
+	font-size: 3.125rem;
+}
+section {
+	background-color: #262626;
+    padding: 5rem 0 2rem;
+}
+.concert_data {
+	display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    font-size: 1.5rem;
+}
+.data {
+	display: flex;
+	align-items: center;
+}
+em.sprite_booking_tickets {
+	background: url(../assets/img/spritesheet.png) no-repeat;
+    margin-left: 0.5rem;
+    width: 24px;
+    height: 25px;
+    background-position: -42px -5px;
+}
+em.sprite_location {
+    background: url(../assets/img/spritesheet.png) no-repeat;
+    width: 18px;
+    height: 25px;
+    margin-left: 0.8rem;
+    background-position: -205px -87px;
+}
+.bold_text {
+	font-weight: bold;
+}
+.calc_tickets {
+	display: flex;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    font-size: 1.625rem;
+}
+.calc_tickets > button {
+    font-size: 45px;
+    border: 0;
+    color: #fff;
+    padding: 0rem 1.2rem 0.1rem;
+    margin: 0 1rem;
+}
+.calc_tickets > button#plus {
+	padding: 0.3rem 1rem 0.1rem;
+}
+input {
+	width: 6%;
+    height: 3.43rem;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    border: none;
+    font-family: Assistant;
+    text-align: center;
+}
+main {
+	background-color: #1f1f1f;
+	color: #cbcbcb;
+    padding: 2rem 0 8rem;
+}
+main h4 {
+	font-size: 1.625rem;
+}
+main span {
+	font-size: 1.625rem;
+}
+main > .inside_cont {
+	flex-direction: column;
+}
+.space {
+	max-width: 650px;
+    margin: 1rem auto;
+    justify-content: space-between;
+
+}
+.output {
+	font-size: 1.625rem;
+	display: flex;
+}
+.inside_cont .buttons > a,
+.inside_cont .buttons > button {
+	font-size: 1.562rem;
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    padding: 0.4rem 0;
+    font-weight: 700;
+    font-family: assistant;
+    color: rgb(203, 203, 203);
+    margin: 0;
+}
+@media only screen and (max-width: 980px) {
+	h3 {
+		display: none;
+	}
+	.calc_tickets > button {
+		font-size: 2.81rem;
+	}
+	.data {
+		width: 100%;
+		padding-top: 1rem;
+	}
+	.output {
+		font-size: 1.425rem;
+	}
+	main h4 {
+		font-size: 1.425rem;
+	}
+	main span {
+		font-size: 1.425rem;
+	}
+}

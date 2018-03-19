@@ -89,71 +89,52 @@
       </div>
     </nav>
   </header>
+  <section>
+    <div class="inside_cont">
+      <h3>בחירת כרטיסים</h3>
+      <div class="concert_data">
+        <div class="data desriprion">
+          <em class="sprite_booking_tickets"></em>
+          <h4 id="">עושים צחוק -&nbsp;</h4>
+          <span id="">ימי חמישי בקומדי בר</span>
+        </div>
+        <div class="data location">
+          <em class="sprite_location"></em>
+          <h4 id="">זואה - ZOA קומדי בר -&nbsp;</h4>
+          <span id="">אולם ראשי</span>
+        </div>
+        <div class="data location">
+          <em class="sprite_time_date"></em>
+          <h4 id=""> 02/11/2017,&nbsp;</h4>
+          <span id="">21:30</span>
+        </div>
+      </div>
+    </div>
+  </section>
   <main>
     <div class="inside_cont">
-      <div class="form">
-        <h3>מועדון חברים</h3>
-        <p>הצטרפו למועדון חברי הקומדי בר ותזכו להנחות ומבצעים לכל המופעים במשרד.</p>
-        <h6>הרשמה בחינם למועדון החברים</h6>
-        <form action="URL" id="friends_form">
-          <label for="firstname">Firstname</label>
-          <input type="text" name="firstname" placeholder="שם פרטי" id="firstname">
-          <label for="lastname">Lastname</label>
-          <input type="text" name="lastname" placeholder="שם משפחה" id="lastname">
-          <label for="email">Email</label>
-          <input type="email" name="email" placeholder="מייל" id="email">
-          <label for="address">Address</label>
-          <input type="text" name="address" placeholder="כתובת" id="address">
-          <label for="phone_number">Phone number</label>
-          <input type="tel" name="phone_number" placeholder="טלפון נייד" id="phone_number">
-          <div class="bdate">
-            <!-- <label for="date">Date</label> -->
-            <!-- <input type="date" name="birthdate" id="date"> -->
-            <span>תאריך לידה</span>
-            <select name="month">
-              <option selected disabled hidden>חודש</option>
-              <option value="01">Month 01</option>
-              <option value="02">Month 02</option>
-              <option value="03">Month 03</option>
-              <option value="04">Month 04</option>
-              <option value="05">Month 05</option>
-              <option value="06">Month 06</option>
-              <option value="07">Month 07</option>
-              <option value="08">Month 08</option>
-              <option value="09">Month 09</option>
-              <option value="10">Month 10</option>
-              <option value="11">Month 11</option>
-              <option value="12">Month 12</option>
-            </select>
-            <select name="Day">
-              <option selected disabled hidden>יום</option>
-              <option value="01">Day 01</option>
-              <option value="02">Day 02</option>
-              <option value="03">Day 03</option>
-              <option value="04">Day 04</option>
-              <option value="05">Day 05</option>
-              <option value="06">Day 06</option>
-              <option value="07">Day 07</option>
-              <option value="08">Day 08</option>
-              <option value="09">Day 09</option>
-              <option value="10">Day 10</option>
-              <option value="11">Day 11</option>
-              <option value="12">Day 12</option>
-            </select>
-          </div>
-          <div class="check">
-            <label for="checkbox">ההרשמה למועדון החברים מהווה הסכמה לקבלת דברי פרסום בטלפון, דואר ובמייל</label>
-            <input type="checkbox" name="advertising" id="checkbox">
-          </div>
-          <input type="submit" value="סיימתי">
-        </form>
+      <div class="calc_tickets">
+        <img src="img/free-place.png" alt="">
+        <button class="red circle" id="plus">+</button>
+        <label for="tickets">tickets</label>
+        <input type="text" id="tickets" name="num_tickets">
+        <button class="red circle">-</button>
+        <span>כרטיס  (רגיל)</span>
       </div>
-      <div class="collage">
-        <img src="../assets/img/grid-pics/1.png" alt="" class="first pic">
-        <img src="../assets/img/grid-pics/2.png" alt="" class="second pic">
-        <img src="../assets/img/grid-pics/3.png" alt="" class="third pic">
-        <img src="../assets/img/grid-pics/4.png" alt="" class="fourth pic">
-        <img src="../assets/img/grid-pics/5.png" alt="" class="fifth pic">
+      <div class="calc_tickets space">
+        <div class="output">
+          <h4>מספר פריטים:</h4>
+          <output name="num_tickets">&nbsp;1 <span>כרטיסים</span></output>
+        </div>
+        <span>|</span>
+        <div class="output">
+          <h4>סה"כ להזמנה למופע זה:</h4>
+          <output>&nbsp;65 <span>ש"ח</span></output>
+        </div>
+      </div>
+      <div class="calc_tickets space buttons">
+        <button class="red circle">ניקוי בחירה</button>
+        <a href="#" class="red circle">הזמנת כרטיסים</a>
       </div>
     </div>
   </main>

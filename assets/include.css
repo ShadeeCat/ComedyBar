@@ -73,6 +73,7 @@ nav.sidenav {
     transition: 0.5s;
     border-top: 4px solid #571010;
     padding-top: 3rem;
+    direction: ltr;
 }
 nav.sidenav > .join {
     display: flex;
@@ -85,6 +86,7 @@ nav.sidenav > .join {
     font-size: 19px;
     position: relative;
     margin-bottom: 1rem;
+    direction: rtl;
 }
 nav.sidenav > .join::after {
     content: "|";
@@ -106,6 +108,7 @@ nav.sidenav > a {
     align-items: center;
     border-bottom: 2px solid;
     padding: 1.7rem 0;
+    direction: rtl;
 }
 nav.sidenav > a:first-of-type {
     border-top: 2px solid;
