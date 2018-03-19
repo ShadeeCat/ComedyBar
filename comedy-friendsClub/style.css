@@ -1,7 +1,8 @@
-h1 {
+h2 {
     font-size: 3.75rem;
 }
-.form h6 {
+.form h3 {
+    font-size: 1.25rem;
     font-weight: 600;
     padding: 0;
 }
@@ -93,7 +94,7 @@ form input[type="submit"] {
     }
 }
 @media only screen and (max-width: 980px) {
-    h1 {
+    h2 {
         display: none;
     }
     .form {
