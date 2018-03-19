@@ -71,7 +71,7 @@ main {
 	color: #cbcbcb;
     padding: 2rem 0 8rem;
 }
-main h4 {
+main span.title {
 	font-size: 1.625rem;
 }
 main span {
@@ -116,7 +116,7 @@ main > .inside_cont {
 	.output {
 		font-size: 1.425rem;
 	}
-	main h4 {
+	main span.title {
 		font-size: 1.425rem;
 	}
 	main span {

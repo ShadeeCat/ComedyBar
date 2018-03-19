@@ -6,10 +6,10 @@ main >.inside_cont {
 	flex-direction: column;
 	align-items: flex-start;
 }
-main > .inside_cont > h4 {
+main > .inside_cont > h3 {
 	font-size: 1.625rem;
 }
-main > .inside_cont > h4 > span {
+main > .inside_cont > h3 > span {
 	font-weight: 600;
 }
 
