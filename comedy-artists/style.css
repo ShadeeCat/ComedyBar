@@ -1,6 +1,7 @@
-h3 {
-    font-size: 3.75rem;
+h2 {
+    font-size: 1.5rem;
 }
+
 main >.inside_cont {
 	flex-direction: column;
 	align-items: flex-start;

@@ -1,4 +1,4 @@
-h3 {
+h2 {
     font-size: 1.93rem;
     max-width: 450px;
 }
@@ -85,10 +85,10 @@ em.sprite_email {
     }
 }
 @media only screen and (max-width: 980px) {
-    h2 {
+    h1 {
         display: none;
     }
-    h3 {
+    h2 {
         text-align: start;
         padding-top: 1.9rem;
     }

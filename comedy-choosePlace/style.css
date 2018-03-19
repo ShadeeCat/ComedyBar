@@ -1,6 +1,13 @@
 h3 {
 	font-size: 3.125rem;
 }
+span.title {
+	font-size: 1.375rem;
+	font-weight: 700;
+}
+main span.title {
+	font-size: 1.625rem;
+}
 section {
 	background-color: #262626;
     padding: 5rem 0 2rem;

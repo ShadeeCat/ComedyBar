@@ -1,7 +1,6 @@
 body {
     padding: 0;
     margin: 0;
-    font-size: 16px;
     color: #fff;
     font-family: Assistant, Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
@@ -25,24 +24,24 @@ a {
     border-bottom: 6px solid transparent;
     border-right: 10px solid white;
 }
-h2 {
+h1 {
 	font-size: 3.75rem; /*60px*/
     margin: 0;
 }
-h3 {
+h2 {
     margin: 0;
     font-size: 2.56rem; /*40.96px*/
 }
-h4 {
+h3 {
     font-size: 1.5rem; /*24px*/
     margin: 0;
 }
-h5 {
+h4 {
     margin: 0;
     font-size: 1.375rem; /*22px*/
     padding-top: 1.7rem;
 }
-h6 {
+h5 {
     margin: 0;
     font-size: 1.25rem; /*20px*/
     padding-top: 1.75rem;

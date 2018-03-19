@@ -4,7 +4,7 @@
     align-items: center;
 	width: 100%;
 }
-.inside_cont > .header > h3 {
+.inside_cont > .header > h1 {
 	font-size: 3.125rem;
 }
 .inside_cont > .header > .enter_members {
@@ -31,7 +31,7 @@
 		width: 100%;
 		padding-top: 2rem;
 	}
-	.inside_cont > .header > h3 {
+	.inside_cont > .header > h1 {
 		display: none;
 	}
 	.main > a {

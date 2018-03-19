@@ -1,4 +1,4 @@
-h3 {
+h2 {
 	font-size: 1.875rem;
 }
 section.main {
@@ -95,9 +95,19 @@ form > input[type="submit"] {
     grid-gap: 0.5rem 1rem;
     padding-top: 1rem
 }
-.movies > iframe:first-of-type {
+.movies > iframe.big_frame {
 	grid-row-start: 1;
     grid-row-end: 3;
+	border: 0;
+    width: 650px;
+    height: 510px;
+    max-width: 100%;
+}
+.movies > iframe.little_frame {
+	width: 450px;
+    height: 250px;
+    max-width: 100%;
+    border: none;
 }
 @media only screen and (max-width: 1300px) {
 	.form {
@@ -106,7 +116,7 @@ form > input[type="submit"] {
 	}
 }
 @media only screen and (max-width: 980px) {
-	h2 {
+	h1 {
 		font-size: 2.2rem;
 	}
 	main {
@@ -126,7 +136,7 @@ form > input[type="submit"] {
 		display: flex;
 		flex-direction: column;
 	}
-	.movies > iframe:first-of-type {
+	.movies > iframe.big_frame {
 		display: none;
 	}
 	.movies > iframe {

@@ -1,7 +1,15 @@
+h2 {
+    font-size: 1.25rem;
+    padding-top: 1.5rem;
+}
+h3 {
+    font-size: 1.375rem;
+    padding-top: 1.5rem;
+}
 main {
     background: #262626;
 }
-main > .inside_cont > h6:last-of-type {
+main > .inside_cont > h2:last-of-type {
     font-weight: 600;
 }
 main > .inside_cont {
@@ -36,7 +44,7 @@ main > .inside_cont {
     html, body {
         font-size: 12px;
     }
-    h2 {
+    h1 {
         font-size: 3.3rem;
     }
 }
