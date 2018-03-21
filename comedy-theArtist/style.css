@@ -11,6 +11,9 @@ section.main {
 section.main > .artist_cont {
 	direction: rtl;
 }
+section.main > .artist_cont h2 {
+	font-size: 3.5rem;
+}
 section.main > .artist_cont p {
 	line-height: 2rem;
 }
@@ -125,6 +128,9 @@ form > input[type="submit"] {
 	section.main {
 		padding: 2rem 0;
 	}
+	section.main > .artist_cont h2 {
+    font-size: 2.6rem;
+}
 	form > input[name="companyname"],
 	form > input[name="phone_number"] {
 		width: 100%;

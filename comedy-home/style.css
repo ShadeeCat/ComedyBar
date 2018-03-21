@@ -7,6 +7,9 @@ h2 {
 .shown {
     display: block;
 }
+nav.sidenav {
+    top: 5rem;
+}
 main {
     background:
         linear-gradient(
